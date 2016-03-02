@@ -1,0 +1,31 @@
+{
+  "name": "generator-tiy-gvl-feb-2016",
+  "version": "0.0.7",
+  "description": "",
+  "license": "MIT",
+  "repository": "dalevfenton/generator-tiy-gvl-feb-2016",
+  "authors": [
+    "Jacob Smith <jacob@jacobsmith.io>",
+    "Dale Fenton <fentondale@gmail.com>"
+  ],
+  "main": "app/index.js",
+  "engines": {
+    "node": ">=5.0",
+    "npm": ">=3.0"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "theironyard"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "ejs": "^2.4.1",
+    "html-wiring": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.22.5",
+    "yosay": "^1.1.0"
+  }
+}
