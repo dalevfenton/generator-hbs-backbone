@@ -1,9 +1,9 @@
 {
-  "name": "generator-tiy-gvl-feb-2016",
-  "version": "0.0.7",
+  "name": "generator-hbs-backbone",
+  "version": "0.0.8",
   "description": "",
   "license": "MIT",
-  "repository": "dalevfenton/generator-tiy-gvl-feb-2016",
+  "repository": "dalevfenton/generator-hbs-backbone",
   "authors": [
     "Jacob Smith <jacob@jacobsmith.io>",
     "Dale Fenton <fentondale@gmail.com>"
@@ -18,7 +18,9 @@
   ],
   "keywords": [
     "yeoman-generator",
-    "theironyard"
+    "theironyard",
+    "handlebars templates",
+    "backbone"
   ],
   "dependencies": {
     "chalk": "^1.1.1",

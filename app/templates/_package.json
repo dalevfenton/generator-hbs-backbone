@@ -25,7 +25,8 @@
     "jquery": "^2.2.0",
     "underscore": "^1.8.3",
     "handlebars": "^4.0.5",
-    "browserify-handlebars": "^1.0.0"
+    "browserify-handlebars": "^1.0.0",
+    "backbone": "^1.3.1"
   },
   "scripts": {
     "html": "cp app/*.html dist/",
@@ -44,12 +45,12 @@
     "build:images": "npm run imagemin && npm run favicon",
     "build": "npm run html && npm run build:css && npm run build:js && npm run build:images",
 
-    "deploy": "npm run build && git-directory-deploy",
+    "deploy": "npm run build && git-directory-deploy --directory dist/",
 
     "watch:scss": "sass --watch app/styles:dist/css",
     "watch:js": "watchify app/scripts/index.js -o dist/js/bundle.js",
     "watch:html": "npm run html && onchange 'app/**/*.html' -- npm run html",
-    "server": "live-server --browser="Google Chrome.app" --port="9001" --open='dist'",
+    "server": "live-server --browser='Google Chrome.app' --port='9001' --open='dist'",
     "watch": "parallelshell 'npm run watch:html' 'npm run watch:scss' 'npm run watch:js' 'npm run server'"
   },
   "browserify": {

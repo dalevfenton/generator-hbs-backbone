@@ -89,11 +89,12 @@ AppGenerator.prototype.install = function() {
 
 AppGenerator.prototype.app = function () {
   mkdirp('app');
-  mkdirp('app/scripts');
+  mkdirp('app/scripts/models');
+  mkdirp('app/scripts/views');
   mkdirp('app/styles');
   mkdirp('app/images');
   mkdirp('app/fonts');
-
+  mkdirp('app/templates');
   mkdirp('dist');
   mkdirp('dist/js');
   mkdirp('dist/css');
